@@ -1,0 +1,10 @@
+ <div *ngIf="categories">
+    <div *ngFor="let category of categories">
+      {{category.name}}
+      <ul>
+        <li *ngFor="let subCategory of category.sub">
+          {{subCategory.name}}
+        </li>
+      </ul>
+    </div>
+  </div>

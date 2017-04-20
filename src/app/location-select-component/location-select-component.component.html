@@ -1,0 +1,12 @@
+
+  <div *ngIf="locations">
+    <div *ngFor="let state of locations.states">
+      {{state.name}}
+      <ul>
+        <li *ngFor="let city of state.cities">
+          {{city.name}}
+        </li>
+      </ul>
+    </div>
+  </div>
+
