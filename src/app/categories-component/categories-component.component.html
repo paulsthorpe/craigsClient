@@ -2,7 +2,7 @@
     <div *ngFor="let category of categories">
       {{category.name}}
       <ul>
-        <li *ngFor="let subCategory of category.sub">
+        <li *ngFor="let subCategory of category.sub" (click)="logCategory(subCategory)">
           {{subCategory.name}}
         </li>
       </ul>

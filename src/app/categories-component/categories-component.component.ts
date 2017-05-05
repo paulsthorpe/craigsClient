@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'categories-component',
@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriesComponentComponent implements OnInit {
 
-  constructor() { }
+  selectedCategory;
+
+  constructor() { 
+
+  }
+
+  
 
   ngOnInit() {
+	  this.selectedCategory = [];
+  }
+
+  logCategory(category){
+	  console.log(category);
   }
 
   categories = [
